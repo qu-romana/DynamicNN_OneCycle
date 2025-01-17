@@ -1,6 +1,6 @@
 Dynamic Pruning for Neural Network Lottery Tickets in a Single Training Cycle
 
-This repository demonstrates a **dynamic pruning method inspired by the Lottery Ticket Hypothesis (LTH), designed to identify sparse sub-networks (winning tickets) within a **single training cycle**. Unlike traditional methods requiring iterative pruning and retraining, this approach progressively increases sparsity during training, achieving competitive accuracy while minimizing computational overhead.
+This repository demonstrates a dynamic pruning method inspired by the Lottery Ticket Hypothesis (LTH), designed to identify sparse sub-networks (winning tickets) within a **single training cycle**. Unlike traditional methods requiring iterative pruning and retraining, this approach progressively increases sparsity during training, achieving competitive accuracy while minimizing computational overhead.
 
 ---
 
