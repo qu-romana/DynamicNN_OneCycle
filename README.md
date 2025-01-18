@@ -9,6 +9,12 @@ This repository demonstrates a dynamic pruning method inspired by the Lottery Ti
 ### Motivation
 Traditional LTH methods are computationally expensive, as they involve repeated pruning and retraining cycles. Inspired by biological synaptic pruning, this project introduces a dynamic pruning mechanism that eliminates the need for retraining by incorporating sparsity directly into the training loop. The method is simple, efficient, and well-suited for resource-constrained environments.
 
+Dynamic Supermask: A Balanced Approach to Sparsity
+The dynamic supermask starts with all weights fully active (mask set to 1), ensuring that every weight has the opportunity to contribute to the learning process in the early stages of training. This approach avoids the risk of prematurely discarding connections that might later prove critical for task performance. Early epochs play a pivotal role in establishing meaningful patterns in the network, and starting with a fully active mask allows the model to fully explore the parameter space.
+
+As training progresses, the dynamic supermask iteratively refines the sparsity pattern by gradually masking weights based on their magnitudes. This dynamic adjustment ensures that the network adapts its structure in real-time to focus on the most important connections while reducing the computational overhead of redundant weights. By balancing an inclusive starting point with gradual task-specific adaptation, this method provides a seamless integration of sparsity into the training process, achieving both efficiency and robust performance under sparse conditions.
+
+
 ### Key Highlights
 - Dynamic Sparsity: Gradual pruning of low-magnitude weights during training.
 - High Accuracy with High Sparsity: Achieves up to 80% sparsity on CIFAR-10 and 77% on MNIST, maintaining competitive performance.
