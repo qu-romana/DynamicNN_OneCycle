@@ -24,17 +24,17 @@ As training progresses, the dynamic supermask iteratively refines the sparsity p
 
  Datasets
 
- CIFAR-10
+ **CIFAR-10**
 - Description: RGB images (32×32 pixels) from 10 object categories.
 - Results: Test accuracy of 91.98% to 94.91% at 80% sparsity.
 
- MNIST
+ **MNIST**
 - Description: Grayscale images (28×28 pixels resized to 32×32) of handwritten digits (0–9).
 - Results: Test accuracy of 99.45% to 99.51% at 77% sparsity.
 
 ---
 
- Methodology
+### Methodology
 
  Architectures
 - ResNet-18: Used for most experiments due to its balance between computational efficiency and accuracy.
@@ -58,7 +58,7 @@ The following hyperparameters were systematically varied and analyzed:
 
 ---
 
- Results
+### Results
 
  CIFAR-10
 - Test Accuracy: 91.98% to 94.91%.
@@ -72,7 +72,7 @@ Both datasets achieved high accuracy while reducing the active parameters signif
 
 ---
 
- Repository Structure
+### Repository Structure
 
  Main Training Files
 1. CIFAR10_With_Validation.ipynb: 
@@ -112,5 +112,5 @@ Both datasets achieved high accuracy while reducing the active parameters signif
    - `Experiment_Cifar10_Resnet34.ipynb`: Compares ResNet-34 against ResNet-18 on CIFAR-10, focusing on deeper architectures' trade-offs.
 
 ---
-Final Remarks
+### Final Remarks
 This project demonstrates the power of dynamic pruning in simplifying the sparsification process while maintaining high accuracy. The results highlight its potential to optimize neural networks for resource-constrained environments, making it a practical and efficient solution for real-world applications.
