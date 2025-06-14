@@ -43,7 +43,7 @@ This novel approach offers remarkable efficiency benefits:
 
 - 🔄 **Dynamic Sparsity:** Gradually masks low-magnitude weights during training (0% → 80% sparsity).
 - 📉 **Single Training Cycle:** Integrates pruning directly into training, eliminating retraining.
-- 📊 **High Accuracy at High Sparsity:** Maintains high accuracy (up to 94.91% on CIFAR-10, 99.51% on MNIST).
+- 📊 **High Accuracy at High Sparsity:** Maintains high accuracy (94.89% on CIFAR-10, 99.51% on MNIST).
 - 🧠 **Inspired by Neuroscience:** Mimics natural synaptic pruning processes in the brain.
 
 ---
@@ -52,8 +52,8 @@ This novel approach offers remarkable efficiency benefits:
 
 | Dataset   | Final Sparsity | Test Accuracy         | Epochs | Parameter Reduction |
 |-----------|----------------|-----------------------|--------|---------------------|
-| CIFAR-10  | 80%            | 91.98% – 94.91%       | 200    | 11.2M → 2.2M (5×)   |
-| MNIST     | 77%            | 99.45% – 99.51%       | 30     | 11.2M → 2.6M (4.3×) |
+| CIFAR-10  | 80%            | 94.89%       | 200    | 11.2M → 2.2M (5×)   |
+| MNIST     | 77%            | 99.51%       | 30     | 11.2M → 2.6M (4.3×) |
 
 <p align="center">
   <img src="./accuracy_loss_progression.gif" alt="Accuracy and Loss Progression" width="700px">
